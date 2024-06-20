@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: alv.PositiveTestCases
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! - in alv.PositiveTestCases
+initializationError(alv.PositiveTestCases)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.Exception: Method setup() should be static
+
