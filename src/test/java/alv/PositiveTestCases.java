@@ -2,6 +2,7 @@ package alv;
 
 import java.time.Duration;
 
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -22,6 +23,7 @@ public class PositiveTestCases {
 
     }
 
+    // Base Test Case
     @Test
     public void testGoogleSearch() {
 
@@ -45,9 +47,13 @@ public class PositiveTestCases {
 
         // Validation
         Assert.assertEquals("Selenium", pageTitle);
+    }
 
-        driver.close();
-
+    @AfterClass
+    public static void teardown() {
+        if (driver != null) {
+            driver.close();
+        }
     }
 
 }
