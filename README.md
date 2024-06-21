@@ -7,7 +7,16 @@ Java Selenium Cheat Sheet
 - [About](#about)
 - [Common Methods](#methods)
     - [WebDriver Interface](#webdriver-interface)
+    - [WebElement Interface](#webelement-interface)
+    - [By Class](#by-class)
+    - [Action Class](#action-class)
+    - [Expected Conditions Class](#expected-conditions)
+    - [WebDriverWait Class](#webdriverwait-class)
+    - [Select Class](#select=class)
+    - [JavaScriptExecutor Interface](#javascriptexecutor-interface)
+    - [Cookie Interface](#cookie-interface)
 - [Topcis](#topics)
+    - [CSS Selectors](#css-selectors)
 
 ## About
 
@@ -24,7 +33,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - navigate() : Returns an instance of the Navigation interface that can be used to control browser navigation
     - manage() : Returns an instance of the Options interface for managing driver-specific settings
 
-WebElement Interface
+### WebElement Interface
 - Description : Represents HTML elements on a web page
 
     - click() : Clicks on the element
@@ -35,7 +44,7 @@ WebElement Interface
     - isEnabled() : Checks if element is enabled
     - isSelected() : Checks if element is selected
 
-By Class
+### By Class
 - Description : Mechanisms to locate elements
 
     - By.id(String id) : Locates by ID attribute
@@ -45,7 +54,7 @@ By Class
     - By.xpath(String xPathExpression) : Locates by XPath location
     - By.cssSelector(String cssSelector) : Locates by CSS selector
 
-Action Class
+### Action Class
 - Description : Mechanisms to interact with web application
 
     - moveToElement(WebElement toElement) : Moves the mouse to the middle of the element
@@ -55,7 +64,7 @@ Action Class
     - sendKeys(Keys to Send) : Sends keystrokes to the element
     - dragAndDrop(WebElement source, WebElement target) : Performs a drag and drop action
 
-Expected Conditions Class
+### Expected Conditions Class
 - Description : Mechanism to set predefined conditions to wait
 
     - visibilityOfElementLocator(By locator) : Waits until the element is located
@@ -63,7 +72,7 @@ Expected Conditions Class
     - titleContains(String title) : Waits until the page title contains the argument
     - alertIsPresent() : Waits until an alert is present
 
-WebDriverWait Class
+### WebDriverWait Class
 - Description : Mechanism to configure waits
 
     - WebDriverWait(WebDriver driver, long timeOutInSeconds) : Waits for a set amount of time (s)
@@ -71,7 +80,7 @@ WebDriverWait Class
     - withTimeout(Duration timeout) : Configures timeout durations
     - pollingEvert(Duration pollingEvery) : Configures polling interval
 
-Select Class
+### Select Class
 - Description : Mechanism to interact with dropdown elements
 
     - selectByVisibleText(String Text) : Selects an option by using visible text attribute
@@ -80,13 +89,13 @@ Select Class
     - deselectAll() : Deselects all options
     - deselectByVisibleText(String text) : Deselects option by visible text attribute
 
-JavaScriptExecutor Interface
+### JavaScriptExecutor Interface
 - Description : Mechanism to execute JavaScript code
 
     - executeScript(String script, Object... args) : Executes JavaScript in the currently selected frame/window
     - executeAsyncScript(String script, Object... args) : Executes an asynchronous JavaScript function
 
-Cookie Interface
+### Cookie Interface
 - Description : Represents browser cookie
 
     - getName() : Gets cookie name
@@ -98,7 +107,7 @@ Cookie Interface
  
 ##Topics
 
-CSS Selectors
+### CSS Selectors
 - Example: <input type="text in here" id="fistname" name="first_name" class="myForm">
 
 - Single Attribute
