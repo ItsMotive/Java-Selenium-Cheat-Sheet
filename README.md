@@ -27,8 +27,8 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 ### WebDriver Interface
 - Description : Controls browsers and interacts with elements
 
-    - get(string URL) : Loads a new webpage
-    - findElement(By by) : Finds the first WebElement using the given method to locate it
+    - ```get(string URL)``` : Loads a new webpage
+    - ```findElement(By by)``` : Finds the first WebElement using the given method to locate it
     - findElements(By by) : Finds all WebElements using the given method to locate it
     - navigate() : Returns an instance of the Navigation interface that can be used to control browser navigation
     - manage() : Returns an instance of the Options interface for managing driver-specific settings
