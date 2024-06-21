@@ -83,7 +83,9 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 ### Explicit Wait
 - Description: Wait mechanic that waits for a certain condition
     - presenceOfElementLocated : Waits for element to be present (does not include visible)
-      ```WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("element_id")));```
+      ```java
+      WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("element_id")));
+      ```
 
 ### Select Class
 - Description : Mechanism to interact with dropdown elements
