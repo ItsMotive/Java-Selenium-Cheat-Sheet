@@ -12,7 +12,7 @@ Java Selenium Cheat Sheet
     - [Action Class](#action-class)
     - [Expected Conditions Class](#expected-conditions)
     - [WebDriverWait Class](#webdriverwait-class)
-    - [Implicit Wait](implicit-wait)
+    - [Implicit Wait](#implicit-wait)
     - [Explicit Wait](#explicit-wait)
     - [Select Class](#select-class)
     - [JavaScriptExecutor Interface](#javascriptexecutor-interface)
