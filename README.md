@@ -10,7 +10,7 @@ Java Selenium Cheat Sheet
     - [WebElement Interface](#webelement-interface)
     - [By Class](#by-class)
     - [Action Class](#action-class)
-    - [Expected Conditions Class](#expected-conditions)
+    - [Expected Conditions Class](#expected-conditions-class)
     - [WebDriverWait Class](#webdriverwait-class)
     - [Implicit Wait](#implicit-wait)
     - [Explicit Wait](#explicit-wait)
