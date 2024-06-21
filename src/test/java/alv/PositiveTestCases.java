@@ -52,7 +52,7 @@ public class PositiveTestCases {
 
     // Getting all options from drop down
     @Test
-    public void getAllOptions() {
+    public void testAllOptions() {
         driver.get("https://omayo.blogspot.com/");
 
         // Retrieves all Options from drop down
@@ -103,6 +103,30 @@ public class PositiveTestCases {
 
         // Close Alert Box
         alert.accept();
+    }
+
+    // Getting Text that continuously changes
+    @Test
+    public void testChangingText1() {
+
+        driver.get("https://the-internet.herokuapp.com/dynamic_content");
+
+        String xPathLocation = "//*[@id='content']/div[2]/div[2]";
+
+        String elementText = driver.findElement(By.xpath(xPathLocation)).getText();
+
+        System.out.println("First Output: " + elementText);
+
+        // Refreshes Page
+        driver.navigate().refresh();
+
+        // Adds 30 second delay to wait for page to load
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+        String refreshText = driver.findElement(By.xpath(xPathLocation)).getText();
+
+        System.out.println("Second Output: " + refreshText);
+
     }
 
     @AfterClass
