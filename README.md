@@ -6,7 +6,7 @@ Java Selenium Cheat Sheet
 
 - [About](#about)
 - [Common Methods](#methods)
-    - [WebDriver Interface](#Webdriver-Interface)
+    - [WebDriver Interface](#WebDriver-Interface)
 - [Topcis](#topics)
 
 ## About
@@ -15,7 +15,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
 ## Methods
 
-### WebDriver Interface {webdriver-interface}
+### WebDriver Interface {WebDriver-Interface}
 - Description : Controls browsers and interacts with elements
 
     - get(string URL) : Loads a new webpage
