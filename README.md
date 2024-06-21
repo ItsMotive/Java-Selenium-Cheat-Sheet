@@ -15,7 +15,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
 ## Methods
 
-WebDriver Interface {webdriver-interface}
+#WebDriver Interface {webdriver-interface}
 - Description : Controls browsers and interacts with elements
 
     - get(string URL) : Loads a new webpage
