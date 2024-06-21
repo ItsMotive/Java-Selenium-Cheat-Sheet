@@ -83,12 +83,12 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
 ### Explicit Wait
 - Description: Wait mechanic that waits for a certain condition
-Intialize Wait:
+- Intialize Wait:
   ```java
   WebDriverWait wait = new WebDriverWait(driver, 10);
   ```
   
-    - presenceOfElementLocated : Waits for element to be present (does not include visible on page)
+####- presenceOfElementLocated : Waits for element to be present (does not include visible on page)
       ```java
       WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("element_id")));
       ```
