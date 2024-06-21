@@ -18,6 +18,7 @@ Java Selenium Cheat Sheet
     - [Cookie Interface](#cookie-interface)
 - [Topics](#topics)
     - [CSS Selectors](#css-selectors)
+    - [AJAX](#ajax)
 
 ## About
 
@@ -88,7 +89,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
   WebDriverWait wait = new WebDriverWait(driver, 10);
   ```
   
-    - #### presenceOfElementLocated : Waits for element to be present (does not include visible on page)
+    - presenceOfElementLocated : Waits for element to be present (does not include visible on page)
       ```java
       WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("element_id")));
       ```
@@ -182,7 +183,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 - Single Attribute
     - ```tagname[attribute='value']```
     - ```input[id='firstname']```
-    - 
+      
 - Multiple Attributes
     - ```tagname[attribute1='value1'][attribute2='value2']```
     - ```input[id='firstname'][name='first_name']```
@@ -209,4 +210,4 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```input[type$='here']```
 
 ### AJAX
-- 
+- #### TBD
