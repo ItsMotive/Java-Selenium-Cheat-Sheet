@@ -83,7 +83,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
 ### Explicit Wait
 - Description: Wait mechanic that waits for a certain condition
-  Intialize Wait:
+Intialize Wait:
   ```java
   WebDriverWait wait = new WebDriverWait(driver, 10);
   ```
