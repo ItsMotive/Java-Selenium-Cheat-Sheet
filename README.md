@@ -38,7 +38,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```getPageSource()``` : Returns source code of current page
     - ```findElement(By by)``` : Finds the first WebElement using the given method to locate it
     - ```findElements(By by)``` : Finds all WebElements using the given method to locate it
-    - ```navigate()``` : Returns an instance of the Navigation interface that can be used to control browser navigation
+    - ```navigate()``` : Provides a way to navigate with more control
       ```java
       Examples:
       driver.navigate().to("http://www.example.com");
@@ -99,6 +99,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
     - ```moveToElement(WebElement toElement)``` : Moves the mouse to the middle of the element
       ```java
+      Example:
       Actions actions = new Actions(driver);
       actions.moveToElement(element).click().build().perform();
       ```
@@ -108,6 +109,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```contextClick(WebElement element)``` : Performs a right click action
     - ```dragAndDrop(WebElement source, WebElement target)``` : Performs a drag and drop action
       ```java
+      Example:
       Actions actions = new Actions(driver);
       actions.dragAndDrop(sourceElement, targetElement).build().perform();
       ```
@@ -132,6 +134,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 - Description: Wait mechanic that waits for a set amount of time
 - Initialize Wait:
   ```
+  Example:
   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
   ```
 
@@ -144,61 +147,73 @@ A repository to recall commonly used Selenium functions. Also to practice using 
   
     - presenceOfElementLocated : Waits for element to be present (does not include visible on page)
       ```java
+      Example:
       WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("element_id")));
       ```
       
     - visibilityOfElementLocated : Waits for element to be visible on page
       ```java
+      Example:
       WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("element_id")));
       ```
       
     - elementToBeClickable : Waits for element to be visible and clickable
       ```java
+      Example:
       WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("element_id")));
       ```
       
     - textToBePresentInElement : Waits for element to have specific string
       ```java
+      Example:
       boolean result = wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.id("element_id")), "expected_text"));
       ```
       
     - titleContains : Waits for title page to contain string
       ```java
+      Example:
       boolean result = wait.until(ExpectedConditions.titleContains("expected_title"));
       ```
       
     - frameToBeAvailableAndSwitchToIt : Waits for frame to be available and switches to it
       ```java
+      Example:
       wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("frame_name_or_id"));
       ```
       
     - invisibilityOfElementLocated : Waits for element to not be visible on page
       ```java
+      Example:
       boolean result = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("element_id")));
       ```
       
     - elementToBeSelected : Waits for element to be selected
       ```java
+      Example:
       WebElement element = wait.until(ExpectedConditions.elementToBeSelected(By.id("element_id")));
       ```
       
     - numberOfElementsToBe : Waits for number of elements are located
       ```java
+      Example:
       List<WebElement> elements = wait.until(ExpectedConditions.numberOfElementsToBe(By.tagName("tag_name"), 3));
       ```
       
     - presenceOfAllElementsLocatedBy : Waits for all elements to be present
       ```java
+      Example:
       List<WebElement> elements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.className("class_name")));
       ```
       
     - visibilityOfAllElements : Waits for all elements to be visible on page
       ```java
+      Example:
       List<WebElement> elements = wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(By.tagName("tag_name"))));
       ```
       
     - alertIsPresent : Waits for alert to be present
       ```java
+      Example:
       Alert alert = wait.until(ExpectedConditions.alertIsPresent());
       ```
 
@@ -216,6 +231,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
     - ```executeScript(String script, Object... args)``` : Executes JavaScript in the currently selected frame/window
       ```java
+      Examples:
       JavascriptExecutor js = (JavascriptExecutor) driver;
       js.executeScript("window.scrollBy(0,1000)");
       js.executeScript("arguments[0].click();", element);
@@ -228,26 +244,31 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
     - ```manage().getCookies()``` : Returns all cookies in domain
       ```java
+      Example:
       Set<Cookie> cookies = driver.manage().getCookies();
       ```
       
     - ```manage().getCookieNamed(String name)``` : Returns specific cookie in domain
       ```java
+      Example:
       Cookie cookie = driver.manage().getCookieNamed("cookieName");
       ```
       
     - ```manage().addCookie(Cookie cookie)``` : Adds cookie to domain
       ```java
+      Example:
       driver.manage().addCookie(new Cookie("name", "value"));
       ```
       
     - ```manage().deleteCookieNamed(String name)``` : Deletes specific cookie in domain
       ```java
+      Example:
       driver.manage().deleteCookieNamed("cookieName");
       ```
 
     - ```manage().deleteAllCookies()``` : Deletes all cookies in domain
       ```java
+      Example:
       driver.manage().deleteAllCookies();
       ```
 
