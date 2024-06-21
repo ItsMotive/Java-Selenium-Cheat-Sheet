@@ -80,6 +80,11 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```withTimeout(Duration timeout)``` : Configures timeout durations
     - ```pollingEvert(Duration pollingEvery)``` : Configures polling interval
 
+### Explicit Wait
+- Description: Wait mechanic that waits for a certain condition
+    - presenceOfElementLocated : Waits for element to be present (does not include visible)
+      ```WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("element_id")));```
+
 ### Select Class
 - Description : Mechanism to interact with dropdown elements
 
@@ -140,5 +145,5 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```tagname[attribute$='value']```
     - ```input[type$='here']```
 
-AJAX
+### AJAX
 - 
