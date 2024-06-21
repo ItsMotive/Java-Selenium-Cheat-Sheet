@@ -12,10 +12,10 @@ Java Selenium Cheat Sheet
     - [Action Class](#action-class)
     - [Expected Conditions Class](#expected-conditions)
     - [WebDriverWait Class](#webdriverwait-class)
-    - [Select Class](#select=class)
+    - [Select Class](#select-class)
     - [JavaScriptExecutor Interface](#javascriptexecutor-interface)
     - [Cookie Interface](#cookie-interface)
-- [Topcis](#topics)
+- [Topics](#topics)
     - [CSS Selectors](#css-selectors)
 
 ## About
@@ -105,10 +105,11 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - isSecure() : Checks to see if cookie is secure
     - isHttpOnly() : Checks to see if cookie is Http-only
  
-##Topics
+## Topics
 
 ### CSS Selectors
-- Example: <input type="text in here" id="fistname" name="first_name" class="myForm">
+- Example:
+  '''<input type="text in here" id="fistname" name="first_name" class="myForm">'''
 
 - Single Attribute
     - tagname[attribute='value']
