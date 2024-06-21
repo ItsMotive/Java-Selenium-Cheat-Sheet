@@ -90,11 +90,20 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 - Description : Mechanisms to interact with web application
 
     - ```moveToElement(WebElement toElement)``` : Moves the mouse to the middle of the element
+      ```java
+      Actions actions = new Actions(driver);
+      actions.moveToElement(element).click().build().perform();
+      ```
+      
     - ```click(WebElement element)``` : Performs a click action
     - ```doubleClick(WebElement element)``` : Performs a double click action
     - ```contextClick(WebElement element)``` : Performs a right click action
     - ```sendKeys(Keys to Send)``` : Sends keystrokes to the element
     - ```dragAndDrop(WebElement source, WebElement target)``` : Performs a drag and drop action
+      ```java
+      Actions actions = new Actions(driver);
+      actions.dragAndDrop(sourceElement, targetElement).build().perform();
+      ```
 
 ### Expected Conditions Class
 - Description : Mechanism to set predefined conditions to wait
@@ -199,6 +208,12 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 - Description : Mechanism to execute JavaScript code
 
     - ```executeScript(String script, Object... args)``` : Executes JavaScript in the currently selected frame/window
+      ```java
+      JavascriptExecutor js = (JavascriptExecutor) driver;
+      js.executeScript("window.scrollBy(0,1000)");
+      js.executeScript("arguments[0].click();", element);
+      ```
+
     - ```executeAsyncScript(String script, Object... args)``` : Executes an asynchronous JavaScript function
 
 ### Cookie Interface
