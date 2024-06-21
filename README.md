@@ -6,7 +6,7 @@ Java Selenium Cheat Sheet
 
 - [About](#about)
 - [Common Methods](#methods)
-    - [WebDriver Interface](#webdriver-interface)
+    - [WebDriver Interface](#Webdriver-Interface)
 - [Topcis](#topics)
 
 ## About
