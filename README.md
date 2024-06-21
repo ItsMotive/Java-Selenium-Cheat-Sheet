@@ -62,8 +62,15 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 - Description : Represents HTML elements on a web page
 
     - ```click()``` : Clicks on the element
+    - ```clear()``` : Clears content of text input
+    - ```submit``` : Submits form
     - ```sendKeys(Keys to Send)``` : Sends keystrokes to the element
     - ```getText()``` : Returns the visible text of the element
+    - ```getTagName()``` : Returns tag name of element
+    - ```getLocation()``` : Returns location of element in page
+    - ```getSize()``` : Returns size of element in page
+    - ```getAttribute(String name)``` : Returns value of attribute for the element
+    - ```getCssValue(String propertyName)``` : Returns value of CSS property for the element
     - ```getAttribute(String name)``` : Returns the value of the specified attribute of the element
     - ```isDisplayed()``` : Checks if element is displayed
     - ```isEnabled()``` : Checks if element is enabled
