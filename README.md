@@ -31,10 +31,16 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 - Description : Controls browsers and interacts with elements
 
     - ```get(string URL)``` : Loads a new webpage
+    - ```getWindowHandles()``` : Returns a set of all window handles currently open
+    - ```getWindowHandle()``` : Returns current window handle
+    - ```getTitle()``` : Returns current window title
+    - ```getCurrentUrl()``` : Returns current page URL
+    - ```getPageSource()``` : Returns source code of current page
     - ```findElement(By by)``` : Finds the first WebElement using the given method to locate it
     - ```findElements(By by)``` : Finds all WebElements using the given method to locate it
     - ```navigate()``` : Returns an instance of the Navigation interface that can be used to control browser navigation
       ```java
+      Examples:
       driver.navigate().to("http://www.example.com");
       driver.navigate().back();
       driver.navigate().forward();
@@ -43,6 +49,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
       
     - ```manage()``` : Returns an instance of the Options interface for managing driver-specific settings
       ```java
+      Examples:
       driver.manage().window().maximize();
       driver.manage().window().setSize(new Dimension(1024, 768));
       ```
@@ -51,6 +58,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```exit()``` : Closes all browsers and ends WebDriver session
     - ```switchTo()``` : Switches to different frames, windows, or alerts
       ```java
+      Examples:
       driver.switchTo().frame("frameName");
       driver.switchTo().defaultContent();
       driver.switchTo().window("windowHandle");
@@ -95,10 +103,9 @@ A repository to recall commonly used Selenium functions. Also to practice using 
       actions.moveToElement(element).click().build().perform();
       ```
       
-    - ```click(WebElement element)``` : Performs a click action
-    - ```doubleClick(WebElement element)``` : Performs a double click action
+    - ```click(WebElement element)``` : Performs a left click action
+    - ```doubleClick(WebElement element)``` : Performs a double left click action
     - ```contextClick(WebElement element)``` : Performs a right click action
-    - ```sendKeys(Keys to Send)``` : Sends keystrokes to the element
     - ```dragAndDrop(WebElement source, WebElement target)``` : Performs a drag and drop action
       ```java
       Actions actions = new Actions(driver);
