@@ -109,7 +109,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
 ### CSS Selectors
 - Example:
-  '''<input type="text in here" id="fistname" name="first_name" class="myForm">'''
+  ```<input type="text in here" id="fistname" name="first_name" class="myForm">```
 
 - Single Attribute
     - tagname[attribute='value']
