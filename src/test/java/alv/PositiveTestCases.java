@@ -107,7 +107,7 @@ public class PositiveTestCases {
 
     // Getting Text that continuously changes
     @Test
-    public void testChangingText1() {
+    public void testChangingText() {
 
         driver.get("https://the-internet.herokuapp.com/dynamic_content");
 
