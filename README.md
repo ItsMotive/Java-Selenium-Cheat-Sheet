@@ -82,9 +82,69 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
 ### Explicit Wait
 - Description: Wait mechanic that waits for a certain condition
-    - presenceOfElementLocated : Waits for element to be present (does not include visible)
+  Intialize Wait:
+  ```java
+  WebDriverWait wait = new WebDriverWait(driver, 10);
+  ```
+  
+    - presenceOfElementLocated : Waits for element to be present (does not include visible on page)
       ```java
       WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("element_id")));
+      ```
+      
+    - visibilityOfElementLocated : Waits for element to be visible on page
+      ```java
+      WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("element_id")));
+      ```
+      
+    - elementToBeClickable : Waits for element to be visible and clickable
+      ```java
+      WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("element_id")));
+      ```
+      
+    - textToBePresentInElement : Waits for element to have specific string
+      ```java
+      boolean result = wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.id("element_id")), "expected_text"));
+      ```
+      
+    - titleContains : Waits for title page to contain string
+      ```java
+      boolean result = wait.until(ExpectedConditions.titleContains("expected_title"));
+      ```
+      
+    - frameToBeAvailableAndSwitchToIt : Waits for frame to be available and switches to it
+      ```java
+      wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("frame_name_or_id"));
+      ```
+      
+    - invisibilityOfElementLocated : Waits for element to not be visible on page
+      ```java
+      boolean result = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("element_id")));
+      ```
+      
+    - elementToBeSelected : Waits for element to be selected
+      ```java
+      WebElement element = wait.until(ExpectedConditions.elementToBeSelected(By.id("element_id")));
+      ```
+      
+    - numberOfElementsToBe : Waits for number of elements are located
+      ```java
+      List<WebElement> elements = wait.until(ExpectedConditions.numberOfElementsToBe(By.tagName("tag_name"), 3));
+      ```
+      
+    - presenceOfAllElementsLocatedBy : Waits for all elements to be present
+      ```java
+      List<WebElement> elements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.className("class_name")));
+      ```
+      
+    - visibilityOfAllElements : Waits for all elements to be visible on page
+      ```java
+      List<WebElement> elements = wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(By.tagName("tag_name"))));
+      ```
+      
+    - alertIsPresent : Waits for alert to be present
+      ```java
+      Alert alert = wait.until(ExpectedConditions.alertIsPresent());
       ```
 
 ### Select Class
