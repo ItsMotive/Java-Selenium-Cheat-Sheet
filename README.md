@@ -34,7 +34,29 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```findElement(By by)``` : Finds the first WebElement using the given method to locate it
     - ```findElements(By by)``` : Finds all WebElements using the given method to locate it
     - ```navigate()``` : Returns an instance of the Navigation interface that can be used to control browser navigation
+      ```java
+      driver.navigate().to("http://www.example.com");
+      driver.navigate().back();
+      driver.navigate().forward();
+      driver.navigate().refresh();
+      ```
+      
     - ```manage()``` : Returns an instance of the Options interface for managing driver-specific settings
+      ```java
+      driver.manage().window().maximize();
+      driver.manage().window().setSize(new Dimension(1024, 768));
+      ```
+      
+    - ```close()``` : Closes current browser
+    - ```exit()``` : Closes all browsers and ends WebDriver session
+    - ```switchTo()``` : Switches to different frames, windows, or alerts
+      ```java
+      driver.switchTo().frame("frameName");
+      driver.switchTo().defaultContent();
+      driver.switchTo().window("windowHandle");
+      driver.switchTo().alert().accept();
+      ```
+      
 
 ### WebElement Interface
 - Description : Represents HTML elements on a web page
@@ -175,10 +197,31 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 ### Cookie Interface
 - Description : Represents browser cookie
 
-    - ```getName()``` : Gets cookie name
-    - ```getValue()``` : Gets cookie value
-    - ```getDomain()``` : Gets cookie domain
-    - ```getPath()``` : Gets path to Cookie
+    - ```manage().getCookies()``` : Returns all cookies in domain
+      ```java
+      Set<Cookie> cookies = driver.manage().getCookies();
+      ```
+      
+    - ```manage().getCookieNamed(String name)``` : Returns specific cookie in domain
+      ```java
+      Cookie cookie = driver.manage().getCookieNamed("cookieName");
+      ```
+      
+    - ```manage().addCookie(Cookie cookie)``` : Adds cookie to domain
+      ```java
+      driver.manage().addCookie(new Cookie("name", "value"));
+      ```
+      
+    - ```manage().deleteCookieNamed(String name)``` : Deletes specific cookie in domain
+      ```java
+      driver.manage().deleteCookieNamed("cookieName");
+      ```
+
+    - ```manage().deleteAllCookies()``` : Deletes all cookies in domain
+      ```java
+      driver.manage().deleteAllCookies();
+      ```
+
     - ```isSecure()``` : Checks to see if cookie is secure
     - ```isHttpOnly()``` : Checks to see if cookie is Http-only
  
