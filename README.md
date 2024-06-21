@@ -20,6 +20,13 @@ Java Selenium Cheat Sheet
 - [Topics](#topics)
     - [CSS Selectors](#css-selectors)
     - [AJAX](#ajax)
+    - [Cross Browser Testing](#cross-browser-testing)
+    - [Regression Testing](#regression-testing)
+    - [Data Driven Testing](#data-driven-testing)
+    - [Behavior Driven Testing](#behavior-driven-testing)
+    - [Performance Testing](#performance-testing)
+    - [Security Testing](#security-testing)
+    - [Selenium Factory](#selenium-factory)
 
 ## About
 
@@ -311,4 +318,25 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```input[type$='here']```
 
 ### AJAX
+- #### TBD
+
+### Cross Browser Testing
+- #### TBD
+
+### Regression Testing
+- #### TBD
+
+### Data Driven Testing
+- #### TBD
+
+### Behavior Driven Testing
+- #### TBD
+
+### Performance Testing
+- #### TBD
+
+### Security Testing
+- #### TBD
+
+### Selenium Factory
 - #### TBD
