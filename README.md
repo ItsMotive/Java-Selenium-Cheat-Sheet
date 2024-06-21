@@ -12,6 +12,7 @@ Java Selenium Cheat Sheet
     - [Action Class](#action-class)
     - [Expected Conditions Class](#expected-conditions)
     - [WebDriverWait Class](#webdriverwait-class)
+    - [Implicit Wait](implicit-wait)
     - [Explicit Wait](#explicit-wait)
     - [Select Class](#select-class)
     - [JavaScriptExecutor Interface](#javascriptexecutor-interface)
@@ -81,6 +82,13 @@ A repository to recall commonly used Selenium functions. Also to practice using 
     - ```until(expectedCondition<t> condition)``` : Waits until condition is true or timeout expires
     - ```withTimeout(Duration timeout)``` : Configures timeout durations
     - ```pollingEvert(Duration pollingEvery)``` : Configures polling interval
+ 
+### Implicit Wait
+- Description: Wait mechanic that waits for a set amount of time
+- Initialize Wait:
+  ```
+  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+  ```
 
 ### Explicit Wait
 - Description: Wait mechanic that waits for a certain condition
