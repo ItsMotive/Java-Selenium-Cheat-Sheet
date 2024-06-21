@@ -6,6 +6,8 @@ Java Selenium Cheat Sheet
 
 - [About](#about)
 - [Common Methods](#methods)
+    - [WebDriver Interface](#webdriver-interface)
+- [Topcis](#topics)
 
 ## About
 
@@ -13,7 +15,7 @@ A repository to recall commonly used Selenium functions. Also to practice using 
 
 ## Methods
 
-WebDriver Interface
+WebDriver Interface {webdriver-interface}
 - Description : Controls browsers and interacts with elements
 
     - get(string URL) : Loads a new webpage
@@ -93,3 +95,40 @@ Cookie Interface
     - getPath() : Gets path to Cookie
     - isSecure() : Checks to see if cookie is secure
     - isHttpOnly() : Checks to see if cookie is Http-only
+ 
+##Topics
+
+CSS Selectors
+- Example: <input type="text in here" id="fistname" name="first_name" class="myForm">
+
+- Single Attribute
+    - tagname[attribute='value']
+    - input[id='firstname']
+    - 
+- Multiple Attributes
+    - tagname[attribute1='value1'][attribute2='value2']
+    - input[id='firstname'][name='first_name']
+      
+- By ID
+    - tagname#id
+    - input#firstname
+    - #firstname
+
+- By Class
+    - tagname.class
+    - input.myForm
+ 
+- Contains
+    - tagname[attribute*='value']
+    - input[type*='text']
+ 
+- Starts With
+    - tagname[attribute^='value']
+    - input[type^='text in']
+
+- Ends With
+    - tagname[attribute$='value']
+    - input[type$='here']
+
+AJAX
+- 
